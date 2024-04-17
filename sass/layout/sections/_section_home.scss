@@ -1,4 +1,5 @@
-.home{
+// Estilos para la sección de inicio
+.home {
     width: 100%;
     height: 100vh;
     padding: 5px 11% 80px;
@@ -8,41 +9,52 @@
     flex-wrap: wrap;
     position: relative;
     z-index: 0;
-    .img{
+
+    // Estilos para la imagen
+    .img {
         flex: 1 1 300px;
-        img{
+        margin-left: 60px;
+        // Estilos para la imagen dentro de .img
+        img {
             width: 100%;
-            margin-left: 60px;
         }
+    }
+
+    // Estilos para el contenido
+    .home-content {
+        flex: 1 1 400px;
+        margin-top: 30px;
+        // Estilos para el título
+        h3 {
+            font-size: 40px;
+            font-weight: 700;
+            // Estilos para el color del span dentro de h3
+            span {
+                color: #e53937;
+            }
+        }
+    }
+
+    // Estilos para el botón
+    #home-btn {
+        padding: 10px;
+        text-decoration: none;
+        background: #e53937;
+        color: white;
+        border-radius: 5px;
     }
 }
 
-.home-content{
-    flex: 1 1 400px;
-    margin-top: 30px;
-    h3{
-        font-size: 40px;
-        font-weight: 700;
-        span{
-            color: #e53937;
-        }
-    }
-}
-
-#home-btn{
-    padding: 10px;
-    text-decoration: none;
-    background: #e53937;
-    color: white;
-    border-radius: 5px;
-}
-
+// Estilos para la sección 2
 .section2 {
     padding: 50px 11% 80px; // Ajusta el relleno según sea necesario
+
+    // Estilos para el contenedor del grid
     .grid-container {
         display: grid;
         grid-template-columns: repeat(2, 1fr); // Cambia el número de columnas según sea necesario
         gap: 10px; // Espacio entre las imágenes
+        // Estilos para las imágenes dentro del grid
         img {
             width: 100%;
             height: auto;
@@ -51,3 +63,14 @@
     }
 }
 
+// Media query para pantallas más chicas
+@media screen and (max-width: 885px) {
+    .home .img {
+        flex-basis: 100%; // Cambiado a 100% para ocupar todo el ancho en pantallas más chicas
+        margin-left: 0; // Eliminado el margen para que no se superponga con el contenido
+        margin-bottom: 20px;
+        img {
+            margin-left: 0; // Eliminado el margen izquierdo
+        }
+    }
+}
