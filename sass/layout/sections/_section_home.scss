@@ -36,8 +36,18 @@
     color: white;
     border-radius: 5px;
 }
-@media screen and (max-width:873px){
-    .home .img img{
-        margin-left: 0px;
+
+section {
+    padding: 50px 11% 80px; // Ajusta el relleno según sea necesario
+    .grid-container {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); // Cambia el número de columnas según sea necesario
+        gap: 10px; // Espacio entre las imágenes
+        img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px; // Añade bordes redondeados a las imágenes
+        }
     }
 }
+

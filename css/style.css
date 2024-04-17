@@ -75,9 +75,16 @@ html::-webkit-scrollbar {
   color: white;
   border-radius: 5px; }
 
-@media screen and (max-width: 873px) {
-  .home .img img {
-    margin-left: 0px; } }
+section {
+  padding: 50px 11% 80px; }
+  section .grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px; }
+    section .grid-container img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px; }
 
 .top-section {
   padding: 10px 11% 100px; }
