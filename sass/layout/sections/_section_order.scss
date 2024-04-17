@@ -1,0 +1,21 @@
+.order{
+    padding: 100px 11% 100px;
+    textarea{
+        resize: none;
+    }
+}
+.order-btn{
+    padding: 6px;
+    margin-top: 30px;
+    background: transparent;
+    border: 2px solid #e53937;
+    border-radius: 5px;
+    color: #e53937;
+    transition: 0.5s;
+    cursor: pointer;
+    &:hover{
+        background: #e53937;
+        color: white;
+        border: 2px solid white;
+    }
+}

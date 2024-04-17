@@ -1,0 +1,30 @@
+.top-section{
+    padding: 10px 11% 100px;
+        h5{
+            color: #e53937;
+            text-align: center;
+        }
+    h3{
+        color: black;
+        text-align: center;
+        font-weight: 600;
+    }
+    .row{
+        margin-top: 30px;
+        align-items: center;
+        .card{
+            border: none;
+            img{
+                width: 200px;
+                margin: auto;
+            }
+        }
+    }
+    .card-body{
+        text-align: center;
+        h1{
+            font-size: 25px;
+            font-weight: 600;
+        }
+    }
+}

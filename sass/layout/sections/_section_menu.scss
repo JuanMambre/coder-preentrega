@@ -1,0 +1,33 @@
+.menu{
+    padding: 100px 11% 100px;
+    h3{
+        text-align: center;
+        color: #e53937;
+    }
+    h2{
+        text-align: center;
+        color: black;
+        font-weight: 600;
+        i{
+            color: #e53937;
+        }
+    }
+    h6{
+        font-size: 16px;
+    }
+    p{
+        margin-top: 5px;
+        font-weight: bold;
+        i{
+            float: right;
+            color: #e53937;
+            cursor: pointer;
+        }
+    }
+}
+.rating{
+    i{
+        color: orange;
+        font-size: 13px;
+    }  
+} 
