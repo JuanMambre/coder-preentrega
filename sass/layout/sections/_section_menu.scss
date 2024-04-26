@@ -1,33 +1,53 @@
-.menu{
-    padding: 100px 11% 100px;
-    h3{
-        text-align: center;
-        color: #e53937;
+
+@mixin text-style($align, $color, $weight: null) {
+    text-align: $align;
+    color: $color;
+    @if $weight {
+        font-weight: $weight;
     }
-    h2{
-        text-align: center;
-        color: black;
-        font-weight: 600;
-        i{
+}
+
+
+%icon-style {
+    float: right;
+    cursor: pointer;
+}
+
+.menu {
+    padding: 100px 11% 100px;
+    
+    h3 {
+        @include text-style(center, #e53937);
+    }
+    
+    h2 {
+        @include text-style(center, black, 600);
+        i {
+            @extend %icon-style;
             color: #e53937;
         }
     }
-    h6{
+    
+    h6 {
         font-size: 16px;
     }
-    p{
+    
+    p {
         margin-top: 5px;
         font-weight: bold;
-        i{
-            float: right;
+        i {
+            @extend %icon-style;
             color: #e53937;
-            cursor: pointer;
         }
     }
 }
-.rating{
-    i{
+
+.rating {
+    i {
+        @extend %icon-style;
         color: orange;
         font-size: 13px;
+        float: none; 
     }  
-} 
+}
+
